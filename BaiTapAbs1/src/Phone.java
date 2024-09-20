@@ -1,6 +1,6 @@
 public abstract class Phone {
-    protected String ten;  // 'ten' means 'name' in Vietnamese
-    protected String soDienThoai;  // 'soDienThoai' means 'phone'
+    protected String ten;
+    protected String soDienThoai;
 
     public Phone() {
     }
@@ -26,8 +26,8 @@ public abstract class Phone {
         this.soDienThoai = soDienThoai;
     }
 
-    abstract void chenSoDienThoai(String ten, String soDienThoai);  // Insert
-    abstract void xoaSoDienThoai(String ten);  // Remove
-    abstract void capNhatSoDienThoai(String ten, String soDienThoaiMoi);  // Update
-    abstract void timKiemSoDienThoai(String ten);  // Search
+    abstract void chenSoDienThoai(String ten, String soDienThoai);
+    abstract void xoaSoDienThoai(String ten);
+    abstract void capNhatSoDienThoai(String ten, String soDienThoaiMoi);
+    abstract void timKiemSoDienThoai(String ten);
 }
