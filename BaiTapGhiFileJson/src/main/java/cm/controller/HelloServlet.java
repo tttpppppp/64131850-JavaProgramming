@@ -23,12 +23,12 @@ public class HelloServlet extends HttpServlet {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         List<User> users = new ArrayList<>();
-           users.add(new User(1, "despacitovv@gmail.com", "123456789", "Tran Tien Phuc", "211/2004"));
+        users.add(new User(1, "despacitovv@gmail.com", "123456789", "Tran Tien Phuc", "211/2004"));
         users.add(new User(2, "example@gmail.com", "987654321ss", "Thu Huyen", "01/01/2000"));
         users.add(new User(3, "test@gmail.com", "abcdefgggge", "Thu Ha", "02/02/2001"));
-
+        String jsonData = gson.toJson(user);
         try (FileWriter writer = new FileWriter("user.json")) {
-            gson.toJson(users, writer);
+               writer.write(jsonData);
         } catch (IOException e) {
             e.printStackTrace();
             resp.getWriter().append("Lỗi khi ghi file JSON");
