@@ -1,5 +1,5 @@
-Code ghi file json trong cm/src/main/java/cm/HelloSevelet.java
-Code đọc file json trong cm/src/main/java/cm/UserSevelet.java
+- **Code ghi file json trong `cm/src/main/java/cm/HelloServlet.java`**
+- **Code đọc file json trong `cm/src/main/java/cm/UserServlet.java`**
 ## Kết quả file json
 
 ```json
