@@ -1,7 +1,6 @@
-
-## JSON Data Example
-
-The JSON data stored in `users.json` looks like this:
+Code ghi file json trong cm/src/main/java/cm/HelloSevelet.java
+Code đọc file json trong cm/src/main/java/cm/UserSevelet.java
+## Kết quả file json
 
 ```json
 [
@@ -15,15 +14,15 @@ The JSON data stored in `users.json` looks like this:
   {
     "id": 2,
     "email": "example@gmail.com",
-    "password": "987654321",
-    "username": "Nguyen Van A",
+    "password": "987654321ss",
+    "username": "Thu Huyen",
     "created_at": "01/01/2000"
   },
   {
     "id": 3,
     "email": "test@gmail.com",
-    "password": "abcdefg",
-    "username": "Le Thi B",
+    "password": "abcdefgggge",
+    "username": "Thu Ha",
     "created_at": "02/02/2001"
   }
 ]
