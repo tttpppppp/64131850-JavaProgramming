@@ -1,8 +1,9 @@
-Code ghi file json trong cm/src/main/java/cm/HelloSevelet.java
-Code đọc file json trong cm/src/main/java/cm/UserSevelet.java
 
-Kết quả
+## JSON Data Example
 
+The JSON data stored in `users.json` looks like this:
+
+```json
 [
   {
     "id": 1,
