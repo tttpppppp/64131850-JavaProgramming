@@ -36,6 +36,5 @@ public class HelloServlet extends HttpServlet {
         }
 
         resp.getWriter().append("Đã thêm file JSON");
-        System.out.println("Current working directory: " + new java.io.File(".").getAbsolutePath());
     }
 }
