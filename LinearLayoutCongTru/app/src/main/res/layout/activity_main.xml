@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#4379F2"
+    >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FF6500"
+                android:text="TÍNH TOÁN SỐ HỌC"
+                android:textColor="#08C2FF"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="40sp"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30sp"
+            >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:text="A="
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/txtA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30sp"
+            >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:text="B="
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/txtB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30sp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnCong"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="#FF6600"
+
+           /> <Button
+                android:id="@+id/btnTru"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="#73EC8B"
+
+           /> <Button
+                android:id="@+id/btnNhan"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="*"
+                android:textSize="20sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="#FFEB00"
+           /> <Button
+                android:id="@+id/btnChia"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="/"
+                android:textSize="20sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="#ED3EF7"
+           />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"
+        />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
