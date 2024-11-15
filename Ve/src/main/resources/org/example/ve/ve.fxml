@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle fill="WHITE" layoutX="309.0" layoutY="200.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="WHITE" layoutX="298.0" layoutY="138.0" points="-101.5999755859375, 53.40000915527344, 134.4000244140625, 53.40000915527344, 9.5999755859375, -87.80000305175781" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="263.0" layoutY="256.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="355.0" layoutY="256.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="WHITE" layoutX="305.0" layoutY="52.0" points="-21.0, 85.20001220703125, 38.20001220703125, 85.20001220703125, 10.20001220703125, 115.99998474121094" stroke="#f52d16" strokeType="INSIDE" strokeWidth="2.0" />
+      <Polygon fill="WHITE" layoutX="264.0" layoutY="-27.0" points="-4.79998779296875, 60.39999771118164, 38.20001220703125, 85.20001220703125, 17.5999755859375, 112.40000915527344" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="WHITE" layoutX="297.0" layoutY="-49.0" points="51.79998779296875, 74.59999084472656, 17.4000244140625, 108.99998474121094, 38.20001220703125, 132.99998474121094" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
