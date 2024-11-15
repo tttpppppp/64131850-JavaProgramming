@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Polygon?>
 
@@ -14,5 +15,9 @@
       <Polygon fill="WHITE" layoutX="305.0" layoutY="52.0" points="-21.0, 85.20001220703125, 38.20001220703125, 85.20001220703125, 10.20001220703125, 115.99998474121094" stroke="#f52d16" strokeType="INSIDE" strokeWidth="2.0" />
       <Polygon fill="WHITE" layoutX="264.0" layoutY="-27.0" points="-4.79998779296875, 60.39999771118164, 38.20001220703125, 85.20001220703125, 17.5999755859375, 112.40000915527344" stroke="BLACK" strokeType="INSIDE" />
       <Polygon fill="WHITE" layoutX="297.0" layoutY="-49.0" points="51.79998779296875, 74.59999084472656, 17.4000244140625, 108.99998474121094, 38.20001220703125, 132.99998474121094" stroke="BLACK" strokeType="INSIDE" />
+      <Arc fill="WHITE" layoutX="269.0" layoutY="259.0" length="120.0" radiusX="16.0" radiusY="12.0" startAngle="119.1" stroke="#df2020" strokeType="INSIDE" />
+      <Arc fill="WHITE" layoutX="258.0" layoutY="259.0" length="118.0" radiusX="16.0" radiusY="12.0" startAngle="-54.0" stroke="#df2020" strokeType="INSIDE" />
+      <Arc fill="WHITE" layoutX="360.0" layoutY="258.0" length="120.0" radiusX="16.0" radiusY="12.0" startAngle="119.1" stroke="#df2020" strokeType="INSIDE" />
+      <Arc fill="WHITE" layoutX="349.0" layoutY="258.0" length="118.0" radiusX="16.0" radiusY="12.0" startAngle="-54.0" stroke="#df2020" strokeType="INSIDE" />
    </children>
 </AnchorPane>
