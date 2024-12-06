@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.th1fx.CaculatorController">
+   <children>
+      <Label layoutX="124.0" layoutY="30.0" text="Caculator">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtA" layoutX="124.0" layoutY="100.0" />
+      <Text layoutX="56.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập số A" />
+      <TextField fx:id="txtB" layoutX="123.0" layoutY="141.0" />
+      <Text layoutX="55.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập số B" />
+      <RadioButton fx:id="radioCong" layoutX="41.0" layoutY="192.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="74.0" text="Cộng" />
+      <RadioButton fx:id="radioTru" layoutX="118.0" layoutY="192.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="74.0" text="Trừ" />
+      <RadioButton fx:id="radioNhan" layoutX="192.0" layoutY="192.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="74.0" text="Nhân" />
+      <RadioButton fx:id="radioChia" layoutX="268.0" layoutY="192.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="74.0" text="Chia" />
+      <TextField fx:id="txtResult" layoutX="108.0" layoutY="238.0" text="Kết quả" />
+      <Button fx:id="btnTinh" layoutX="134.0" layoutY="320.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #2980b9; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Tính" />
+   </children>
+</AnchorPane>
