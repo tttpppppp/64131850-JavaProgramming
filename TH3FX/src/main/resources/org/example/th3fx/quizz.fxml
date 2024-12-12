@@ -10,10 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.th3fx.QuizzController">
    <left>
-      <VBox alignment="CENTER" prefHeight="570.0" prefWidth="237.0" style="-fx-background-color: #F95454;" BorderPane.alignment="CENTER">
+      <VBox fx:id="questionsVBox" alignment="CENTER" prefHeight="570.0" prefWidth="237.0" style="-fx-background-color: #F95454;" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" prefHeight="58.0" prefWidth="210.0">
                <children>
@@ -24,102 +23,6 @@
                   </Text>
                </children>
             </HBox>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" text="Câu 10">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="199.0" style="-fx-background-color: #0D92F4;" text="Câu 1" textFill="#fafafa">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
          </children>
          <BorderPane.margin>
             <Insets />
@@ -132,14 +35,16 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4F75FF;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" layoutX="21.0" layoutY="14.0" prefHeight="167.0" prefWidth="689.0" style="-fx-border-color: #ffffff; -fx-border-radius: 10;" text="Câu hỏi 1 ở đây" textFill="#fffafa">
+            <Label fx:id="txtCauHoi" alignment="CENTER" layoutX="21.0" layoutY="14.0" prefHeight="167.0" prefWidth="689.0" style="-fx-border-color: #ffffff; -fx-border-radius: 10;" text="Câu hỏi 1 ở đây" textFill="#fffafa">
                <font>
-                  <Font size="29.0" />
+                  <Font size="20.0" />
                </font>
                <padding>
                   <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
                </padding>
+               <wrapText>true</wrapText> <!-- Cho phép xuống dòng tự động -->
             </Label>
+
             <Button fx:id="btnA1" layoutX="34.0" layoutY="319.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" style="-fx-background-radius: 50%;" text="A" />
             <Button fx:id="btnA" layoutX="95.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="35.0" prefWidth="326.0" text="Phương án A" />
             <Button fx:id="btnB1" layoutX="34.0" layoutY="376.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" style="-fx-background-radius: 50%;" text="B" />
@@ -147,14 +52,14 @@
             <Button fx:id="btnC1" layoutX="34.0" layoutY="436.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" style="-fx-background-radius: 50%;" text="C" />
             <Button fx:id="btnC" layoutX="95.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="35.0" prefWidth="326.0" text="Phương án C" />
             <Button fx:id="btnD1" layoutX="34.0" layoutY="491.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" style="-fx-background-radius: 50%;" text="D" />
-            <Button fx:id="BtnD" layoutX="95.0" layoutY="494.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="35.0" prefWidth="326.0" text="Phương án D" />
+            <Button fx:id="btnD" layoutX="95.0" layoutY="494.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="35.0" prefWidth="326.0" text="Phương án D" />
             <Text layoutX="652.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <Text fill="WHITE" layoutX="633.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Điểm">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Label layoutX="627.0" layoutY="442.0" style="-fx-border-color: #ffffff; -fx-padding: 10;" text="100" textFill="#fcc737">
+            <Label fx:id="txtDiem" layoutX="627.0" layoutY="442.0" style="-fx-border-color: #ffffff; -fx-padding: 10;" text="0" textFill="#fcc737">
                <font>
                   <Font size="27.0" />
                </font>
