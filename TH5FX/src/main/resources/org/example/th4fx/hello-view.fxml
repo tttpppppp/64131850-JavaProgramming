@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.th4fx.DictionaryController" spacing="15" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: #f5f5f5;">
+
+    <!-- Tiêu đề -->
+    <Label text="Ứng dụng Từ Điển" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+    <Label text="Nhập từ cần tra cứu để xem nghĩa" style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+
+    <!-- Khu vực tìm kiếm -->
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="inputWord" promptText="Nhập từ..." style="-fx-pref-width: 250px; -fx-font-size: 14px;" />
+        <Button text="Tra cứu" onAction="#onSearchWord" style="-fx-font-size: 14px; -fx-background-color: #007bff; -fx-text-fill: white;" />
+    </HBox>
+
+    <!-- Kết quả -->
+    <VBox spacing="10" alignment="CENTER" style="-fx-pref-width: 350px;">
+        <Label text="Kết quả:" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+        <TextArea fx:id="outputMeaning" editable="false" wrapText="true"
+                  style="-fx-font-size: 14px; -fx-text-fill: #333; -fx-background-color: #fff; -fx-border-color: #ddd; -fx-border-width: 1;"
+                  prefHeight="150" />
+    </VBox>
+</VBox>
